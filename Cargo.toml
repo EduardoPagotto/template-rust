@@ -1,0 +1,5 @@
+[workspace]
+
+members = ["apptest"]
+
+resolver = "1"
