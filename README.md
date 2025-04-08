@@ -62,3 +62,24 @@
     ├── README.md
     └── workspace.code-workspace
     ```
+
+7. Create exec01 and lib01
+```bash
+# create program exec01 in workspace
+cargo new --bin exec01
+
+# create library lib01 in workspace
+create new --lib lib01
+```
+
+8. Add ref of lib01 in cargo exec01 (./exec01/Cargo.toml)
+```toml
+[dependencies]
+# add line bellow
+lib01 = { path = "../lib01" }
+```
+
+9. Add ref of lib01 in firsht line of main.rs of  exec01 (./exec01/src/main.rs)
+```rs
+use lib01::add
+```

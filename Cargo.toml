@@ -1,5 +1,5 @@
 [workspace]
 
-members = ["apptest"]
+members = ["exec01", "lib01"]
 
 resolver = "1"
