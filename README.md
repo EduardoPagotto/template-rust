@@ -1,6 +1,7 @@
 # Template-rust workspace
 
-## Project with complete structure
+## Structure of worksapce, build and link parameters
+
 1. Create a workspace hands-on
 ```bash
 mkdir hands-on
@@ -41,7 +42,7 @@ members = []
 resolver = "1"
 ```
 
-1. Add file gitignore: (.gitignore)
+5. Add file gitignore: (.gitignore)
 ```
 target/
 debug/
@@ -50,7 +51,7 @@ Cargo.lock
 *.pdb
 ```
 
-1. Final structure files:
+6. Final structure files:
 ```bash
 user@thinkp:hands-on$ tree -a
 .
@@ -62,7 +63,7 @@ user@thinkp:hands-on$ tree -a
 └── workspace.code-workspace
 ```
 
-1. Create program exec01 and library lib01
+7. Create program exec01 and library lib01
 ```bash
 # create program exec01 in workspace
 cargo new --bin exec01
@@ -78,7 +79,7 @@ create new --lib lib01
 lib01 = { path = "../lib01" }
 ```
 
-1. Add ref of lib01 in  main.rs of  exec01 (./exec01/src/main.rs)
+9. Add ref of lib01 in  main.rs of  exec01 (./exec01/src/main.rs)
 ```rs
 use lib01::add
 ```
