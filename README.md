@@ -29,7 +29,7 @@ rustc -vV
     LLVM version: 20.1.5
 ```
 
-3. [Add file with build parameters](.cargo/config.toml):.cargo/config.toml
+3. Add file with build parameters:[.cargo/config.toml](.cargo/config.toml)
 ```toml
 [build]
 #target = "x86_64-unknown-linux-gnu"
@@ -44,7 +44,7 @@ codegen-units = 1
 panic = "abort"
 ```
 
-4. [Add workspace setup file](./Cargo.toml):./Cargo.toml
+4. Add workspace setup file:[./Cargo.toml](./Cargo.toml)
 ```toml
 [workspace]
 members = []
@@ -59,7 +59,7 @@ documentation = "https://github.com/EduardoPagotto/template-rust"
 #[workspace.dependencies]
 ```
 
-5. [Add file gitignore](.gitignore):.gitignore
+5. Add file gitignore:[.gitignore](.gitignore)
 ```
 target/
 debug/
@@ -90,14 +90,14 @@ cargo new --bin exec01
 create new --lib lib01
 ```
 
-2. [Add ref of package lib01 in package exec01](./exec01/Cargo.toml):./exec01/Cargo.toml
+2. Add ref of package lib01 in package exec01:[./exec01/Cargo.toml](./exec01/Cargo.toml)
 ```toml
 [dependencies]
 # add line bellow
 lib01 = { path = "../lib01" }
 ```
 
-3. Add ref of lib01 in  main.rs of  exec01 ./exec01/src/main.rs
+3. Add ref of lib01 in  main.rs of  exec01: [./exec01/src/main.rs](./exec01/src/main.rs)
 ```rs
 // Add other Package in same worksapce
 use lib01::add;
