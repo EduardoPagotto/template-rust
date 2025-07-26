@@ -1,6 +1,9 @@
 [package]
 name = "lib01"
-version = "0.1.0"
+version.workspace = true
 edition = "2024"
+authors.workspace = true
+description.workspace = true
+documentation.workspace = true
 
 [dependencies]
